@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nisarga M T | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nisarga M T - Computer Science Engineering student and Full Stack Web Developer Portfolio showcasing projects and skills.">
+    <meta name="keywords" content="Nisarga M T, Web Developer, Portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Nisarga M T">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -55,24 +64,32 @@
 
         <br>
 
-        <!-- Download Resume Button -->
-        <a href="Nisarga_M_T_Resume.pdf" target="_blank">View Resume</a>
-
-            <button>Download Resume</button>
+        <!-- Fixed Resume Download -->
+        <a href="Nisarga_M_T_Resume.pdf" download>
+            <button type="button">Download Resume</button>
         </a>
     </section>
 
     <!-- Contact -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
 
+    <!-- EmailJS Library & Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("DNorfClPebdTVpTX9");  // <-- Replace with your EmailJS Public Key
+        })();
+    </script>
+
+    <!-- Your Script -->
     <script src="script.js"></script>
 </body>
 </html>
