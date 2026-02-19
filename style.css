@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #6f42c1);
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f2ff;
+}
+
+/* Hero */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.highlight {
+    color: #00f2ff;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Sections */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    background: #00c6ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background: #00c6ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
